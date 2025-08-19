@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common'
 
 @Injectable()
 export class UserService {
@@ -9,7 +9,7 @@ export class UserService {
       data: {
         user: 'user',
       },
-    };
+    }
   }
 
   addUser() {
@@ -19,6 +19,6 @@ export class UserService {
       data: {
         user: 'user',
       },
-    };
+    }
   }
 }
