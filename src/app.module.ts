@@ -1,11 +1,11 @@
-import { Module } from '@nestjs/common';
-import { UserModule } from './user/user.module';
-import { AuthModule } from './auth/auth.module';
-import { LoginModule } from './login/login.module';
-import { RangeModule } from './range/range.module';
-import { ConfigModule } from '@nestjs/config';
-import Joi from 'joi';
-import dotenv from 'dotenv';
+import { Module } from '@nestjs/common'
+import { UserModule } from './user/user.module'
+import { AuthModule } from './auth/auth.module'
+import { LoginModule } from './login/login.module'
+import { RangeModule } from './range/range.module'
+import { ConfigModule } from '@nestjs/config'
+import Joi from 'joi'
+import dotenv from 'dotenv'
 // # 生成控制器（不包含测试文件）
 // npx @nestjs/cli g controller user --no-spec
 
@@ -15,7 +15,7 @@ import dotenv from 'dotenv';
 // # 生成完整的 CRUD 资源
 // npx @nestjs/cli g resource user --no-spec
 
-const envFilePath = `.env.${process.env.NODE_ENV || 'production'}`;
+const envFilePath = `.env.${process.env.NODE_ENV || 'production'}`
 @Module({
   imports: [
     UserModule,
