@@ -1,0 +1,28 @@
+{
+  "registry-mirrors": [
+    "https://z7w5x98p.mirror.aliyuncs.com",
+    "https://docker.mirrors.ustc.edu.cn",
+    "https://hub-mirror.c.163.com",
+    "https://mirror.baidubce.com",
+    "https://ccr.ccs.tencentyun.com"
+  ],
+  "insecure-registries": [],
+  "debug": false,
+  "experimental": false,
+  "max-concurrent-downloads": 10,
+  "max-concurrent-uploads": 5,
+  "log-driver": "json-file",
+  "log-opts": {
+    "max-size": "10m",
+    "max-file": "3"
+  },
+  "live-restore": true,
+  "storage-driver": "overlay2",
+  "default-ulimits": {
+    "nofile": {
+      "Hard": 64000,
+      "Name": "nofile",
+      "Soft": 64000
+    }
+  }
+}
