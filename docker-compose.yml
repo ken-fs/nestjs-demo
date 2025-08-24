@@ -1,8 +1,0 @@
-services:
-  db:
-    image: mysql:8.0
-    # 或者使用阿里云镜像
-    # image: registry.cn-hangzhou.aliyuncs.com/library/mysql:8.0
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: example
